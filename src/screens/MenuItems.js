@@ -9,27 +9,37 @@ const MenuItems = () => {
       <TouchableOpacity style={styles.buttonStyle}
       onPress={()=>navigation.navigate("About")}
       >
-          <Text>About</Text>
+          <Text style={styles.textStyle}>About</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.buttonStyle}
       onPress={()=>navigation.navigate("Student")}
       >
-          <Text>Student</Text>
+          <Text style={styles.textStyle}>Student</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.buttonStyle}
       onPress={()=>navigation.navigate("Skill")}
       >
-          <Text>Skill</Text>
+          <Text style={styles.textStyle}>Skill</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.buttonStyle}
       onPress={()=>navigation.navigate("Contact")}
       >
-          <Text>Contact US</Text>
+          <Text style={styles.textStyle}>Contact US</Text>
       </TouchableOpacity>
     </View>
   )
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    menuContainer:{
+        flexDirection:'row',
+        justifyContent: 'space-evenly',
+        marginBottom:20,
+    },
+    textStyle:{
+        textTransform: 'uppercase',
+        fontWeight:'bold',
+    }
+});
 
 export default MenuItems

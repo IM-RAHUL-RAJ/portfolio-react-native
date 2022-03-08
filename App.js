@@ -17,15 +17,27 @@ export default function App() {
   return(
     <NavigationContainer>
     <Stack.Navigator initialRouteName='Home'>
-    <Stack.Screen name="Home" >
+    <Stack.Screen name="Home" options={{headerShown:false}}>
     {(props)=><Home {...props} channelName={"Rahul's Company"}/>}
     </Stack.Screen>
 
 
-    <Stack.Screen name="Skill" component={Skill}/>
-    <Stack.Screen name="Student" component={UserData}/>
-    <Stack.Screen name="About" component={About}/>
-    <Stack.Screen name="Contact" component={Contact}/>
+    <Stack.Screen name="Skill" component={Skill} options={{headerTitleStyle:{fontSize:30},
+    headerTitle:"Skills",
+    headerTitleAlign:"center",
+    }}/>
+    <Stack.Screen name="Student" component={UserData} options={{headerTitleStyle:{fontSize:30},
+    headerTitle:"Students",
+    headerTitleAlign:"center",
+    }}/>
+    <Stack.Screen name="About" component={About} options={{headerTitleStyle:{fontSize:30},
+    headerTitle:"About",
+    headerTitleAlign:"center",
+    }}/>
+    <Stack.Screen name="Contact" component={Contact} options={{headerTitleStyle:{fontSize:30},
+    headerTitle:"Contact Us",
+    headerTitleAlign:"center",
+    }}/>
 
     </Stack.Navigator>
     

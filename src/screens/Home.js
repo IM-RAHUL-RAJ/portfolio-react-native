@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
       paddingHorizontal:20,
       backgroundColor:'#fff',
       textAlign:'center',
+      paddingBottom:20
     },
    headerImage:{
     height:undefined,
